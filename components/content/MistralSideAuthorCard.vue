@@ -1,12 +1,12 @@
 <template>
     <div class="w-[110px] h-[110px] border border-gray-300 rounded-full flex items-center justify-center p-1">
-        <NuxtImg
+        <!-- <NuxtImg
             :src="author.avatar"
             :alt="author.name"
             class="rounded-full border border-gray-300"
             width="100"
             height="100"
-        />
+        /> -->
     </div>
     <div class="font-semibold text-xl mt-2">
         {{ author.name }}
@@ -143,6 +143,23 @@ import {findAuthor} from '#imports'
 
 const config = useAppConfig()
 
-const author = findAuthor()
+//const author = findAuthor()
+const author = {
+    username: 'john-doe',
+    name: 'John Doe',
+    description:
+        'lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+    avatar: '/images/avatar.jpg',
+    socials: {
+        twitter: 'https://twitter.com',
+        twitter_username: 'username',
+        mastodon: 'https://piaille.fr',
+        youtube: 'https://youtube.com',
+        linkedin: 'https://linkedin.com',
+        facebook: 'https://facebook.com',
+        instagram: 'https://instagram.com',
+        github: 'https://github.com',
+    },
+}
 
 </script>
