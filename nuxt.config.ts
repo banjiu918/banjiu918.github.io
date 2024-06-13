@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 const path = require('path')
 export default defineNuxtConfig({
-    ssr: false,
+
     app: {
         baseURL: '/banjiu918.github.io/',
         buildAssetsDir: 'nuxt_assets',
