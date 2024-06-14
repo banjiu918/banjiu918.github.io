@@ -20,5 +20,10 @@ export default defineNuxtConfig({
             publicDir: path.join(__dirname, 'docs')
         }
     },
+    content: {
+        api: {
+            baseURL: '/api/content'
+        }
+    }
 
 })
