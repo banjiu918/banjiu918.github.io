@@ -47,12 +47,12 @@
                 v-if="author"
                 class="flex items-center font-medium sm:mx-3 justify-center"
             >
-                <NuxtImg
+                <img
                     :src="author.avatar"
                     loading="lazy"
                     alt=""
                     class="mr-3 w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800"
-                />
+                >
                 <div>
                     <div class="font-bold text-slate-500 text-xs">
                         {{ author.name }}

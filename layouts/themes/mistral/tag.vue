@@ -49,15 +49,14 @@
                                 class="col-span-1 p-4 flex justify-center items-center"
                             >
                                 <NuxtLink :to="article._path" class="w-full">
-                                    <NuxtImg
+                                    <img
                                         :src="'/images/' + article.cover"
                                         :alt="article.title"
                                         class="w-full object-cover"
                                         sizes="233px sm:400px md:400px"
                                         format="webp"
                                         loading="lazy"
-                                        placeholder
-                                    />
+                                    >
                                 </NuxtLink>
                             </div>
                         </div>

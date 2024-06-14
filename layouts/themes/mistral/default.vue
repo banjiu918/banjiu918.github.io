@@ -6,12 +6,11 @@
                 v-if="doc.cover"
                 class="md:flex justify-center mt-24 hidden lg:h-[500px]"
             >
-                <NuxtImg
+                <img
                     :src="'/images/' + doc.cover"
                     :alt="doc.title"
                     fit="cover"
-                    placeholder
-                />
+                >
             </div>
             <div class="px-4 mx-auto sm:px-6 xl:max-w-7xl xl:px-0 mt-10">
                 <ArticleHeader :article="doc" />

@@ -1,12 +1,12 @@
 <template>
     <div class="w-[110px] h-[110px] border border-gray-300 rounded-full flex items-center justify-center p-1">
-        <!-- <NuxtImg
+        <img
             :src="author.avatar"
             :alt="author.name"
             class="rounded-full border border-gray-300"
             width="100"
             height="100"
-        /> -->
+        >
     </div>
     <div class="font-semibold text-xl mt-2">
         {{ author.name }}
