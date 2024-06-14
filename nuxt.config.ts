@@ -3,7 +3,6 @@ const path = require('path')
 export default defineNuxtConfig({
 
     app: {
-        baseURL: '/banjiu918.github.io/',
         buildAssetsDir: 'nuxt_assets',
     },
     extends: [
