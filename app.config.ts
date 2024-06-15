@@ -6,11 +6,11 @@ export default defineAppConfig({
     theme: 'mistral',
 
     // The name of the blog itself
-    name: 'Bloggrify',
+    name: 'RR\'s Blog',
     avatar: '/images/avatar.jpg',
     // The description of the blog if any
     description:
-        'lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+        '作为我的第一个根据地，我很高兴能够在这里记录我的生活，希望这个博客能够为你带来帮助。',
 
     socials: {
         twitter: 'https://twitter.com',
@@ -42,11 +42,12 @@ export default defineAppConfig({
     // and the mistral theme use the default author for the main page
     authors: [
         {
-            username: 'john-doe',
-            name: 'John Doe',
+            default: true,
+            username: 'LeelaDang',
+            name: 'Leela',
             description:
-                'lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
-            avatar: '/images/avatar.jpg',
+                '记录一切',
+            avatar: '/images/avatar.jpeg',
             socials: {
                 twitter: 'https://twitter.com',
                 twitter_username: 'username',

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Bloggrify</title>
+        <title>RR's Blog</title>
         <link>https://mistral.bloggrify.com</link>
-        <description>lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</description>
-        <lastBuildDate>Fri, 14 Jun 2024 09:19:13 GMT</lastBuildDate>
+        <description>作为我的第一个根据地，我很高兴能够在这里记录我的生活，希望这个博客能够为你带来帮助。</description>
+        <lastBuildDate>Sat, 15 Jun 2024 07:54:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>bloggrify</generator>
         <language>en</language>
-        <copyright>All rights reserved 2024, Bloggrify</copyright>
+        <copyright>All rights reserved 2024, RR's Blog</copyright>
         <item>
             <title><![CDATA[Custom components]]></title>
             <link>https://mistral.bloggrify.com/custom-components</link>

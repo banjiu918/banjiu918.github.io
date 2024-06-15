@@ -139,27 +139,24 @@
     </div>
 </template>
 <script setup lang="ts">
-import {findAuthor} from '#imports'
-
-const config = useAppConfig()
-
-//const author = findAuthor()
-const author = {
-    username: 'john-doe',
-    name: 'John Doe',
-    description:
-        'lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
-    avatar: '/images/avatar.jpg',
-    socials: {
-        twitter: 'https://twitter.com',
-        twitter_username: 'username',
-        mastodon: 'https://piaille.fr',
-        youtube: 'https://youtube.com',
-        linkedin: 'https://linkedin.com',
-        facebook: 'https://facebook.com',
-        instagram: 'https://instagram.com',
-        github: 'https://github.com',
-    },
+type Author = {
+    username: string
+    name: string
+    avatar: string
+    description: string
+    default: boolean
 }
+
+const findAuthor = (authorId?: string) => {
+    const config = useAppConfig()
+
+    if (authorId === undefined) {
+        return config.authors.find((author: Author) => author.default)
+    }
+    return config.authors.find((author: Author) => author.username === authorId)
+}
+
+const author = findAuthor()
+
 
 </script>
